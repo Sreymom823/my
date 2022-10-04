@@ -1,0 +1,222 @@
+@import 'global/nav';
+@import 'global/footer';
+@import 'component/btn';
+@import 'component/variable';
+.foot{
+    width: 100%;
+    margin-top: 0%;
+}
+.bt-search{
+    background-color: rgba(128, 128, 128, 0);
+    border: none;
+}
+.groupcard{
+    width: 97%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    // background: #000;
+    .card{
+        width: 100%;
+        height: 100%;
+        border: 1px grey solid;
+        .pic{
+            width: 100%;
+            height: 140px;
+            background-image: url(/img/manager.jpg);
+            background-size: cover;
+            padding: 10px;
+            img{
+                width: 50px;
+                border-radius: 45px;
+            }
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            @include proflex (flex,center,column);
+            span{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            button{
+                padding: 10px;
+                width: 100%;
+            }
+       }
+       .footcard{
+        background: $navcolor;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        button{
+            background: $navcolor;
+            background: white;
+            border: none;
+            font-size: 18px;
+        }
+       }
+    }
+}
+.maincontant{
+    .nav1{
+        display: none;
+    }
+    width: 100%;
+    // height: 100%;
+    padding-bottom: 5% ;
+    padding-top: 3%;
+    background-color: white;
+    @include proflex(flex,center,column);
+    align-items: center;
+    
+    .content{
+        // background-color: rgb(156, 243, 16);
+        @include proflex(flex,center,column);
+        align-items: center;
+        width: 90%;
+        .bt-search{
+            @include proali (flex,center,center);
+            button{
+                // border: none;
+                background-color:$navcolor;
+                border: grey 2px solid;
+            }
+        }
+       
+    }
+}
+
+
+
+
+.groupcard{
+    @include responsiveSize(medium){
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+.nav{
+    @include responsiveSize(small){
+        li{
+            display: none;
+        }
+        .nav-left{
+            img{
+                width: 60px;
+                height: 60px;
+            }
+        }
+        .nav-right{
+            width: 30%;
+            // background-color: palegreen;
+            button{
+                font-size: 10px;
+            }
+        }
+    }
+}
+.groupcard{
+    @include responsiveSize(small){
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        .card{
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        }
+    }
+}
+.maincontant{
+    @include responsiveSize(small){
+        .nav1{
+            display: flex;
+            justify-content: center;
+            // background-color: aquamarine;
+            ul{
+                display: flex;
+                list-style: none;
+                gap: 3px;
+                padding: 10px;
+                // background:cornflowerblue ;
+            a{     display: flex;
+                    text-decoration: none;
+                    li{
+                        padding: 5px;
+                        background-color:rgb(30, 125, 184);
+                        color: white;
+                        border:  grey 1px solid;
+                        // border-radius: 10px;
+                    }
+                    // li:hover{
+                    //     background-color: #000;
+                    // }
+                }
+            
+            }
+        }
+        .content{
+            h1{
+                font-size: 25px;
+            }
+            .bt-search{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                margin-right: 35px;
+                gap: 15px;
+                // background: #000;
+                input{
+                    width: 100%;
+                    margin:10px;
+                    padding: 5px;
+                    border-radius: 10px;
+                    border: grey 1px solid;
+                }
+                button{
+                    border: 1px grey solid;
+                    margin-left: 100px;
+                    width: 100%;
+                    padding: 5px;
+                    background-color: $navcolor;
+                    border-radius: 10px;
+                    color: white;
+                }
+                button:hover{
+                    border: black 1px solid;
+                }
+            }
+        }
+        
+    }
+}
+.foot{
+    .footer{
+        @include responsiveSize(small){
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 15px;
+            i ,span{
+                font-size: 15px; 
+            }
+            img{
+                width:15px;
+                height: 15px;
+            }
+            .f-right{
+                margin-left: 20px;
+            }
+            .f-center{
+              margin-left: 15px;
+            }
+            p{
+                font-size: 15px;
+                margin: 1px;
+            }
+        }
+    }
+}

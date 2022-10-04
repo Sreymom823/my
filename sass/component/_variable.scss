@@ -1,0 +1,26 @@
+@mixin proflex ($df,$jc,$fd) {
+    display: $df;
+    justify-content: $jc;
+    flex-direction: $fd;
+}
+@mixin proali($f,$j,$ali) {
+    display: $f;
+    justify-content: $j;
+    align-items: $ali;
+}
+@mixin flexjc ($df,$jc) {
+    display: $df;
+    justify-content: $jc;
+}
+$navcolor:rgba(48, 201, 235, 0.833);
+$buttoncolor:blue;
+$headercolor:rgb(42, 112, 242);
+$fontcolor:white;
+$maxwidth:80%;
+$formwidth:90%;
+$btnpadding:10px;
+$cardcolor:rgb(202, 69, 91);
+$bodycolor:gainsboro;
+$colorbg: rgba(255, 255, 255, 0.678);
+$bg:rgba(11, 27, 170, 0.651);
+$color:rgb(11, 27, 170);

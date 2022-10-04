@@ -1,0 +1,82 @@
+@import 'global/nav';
+@import 'global/footer';
+@import 'component/btn';
+@import 'component/variable';
+.nav1{
+    display: none;
+}
+.f-main{
+    display: flex;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    p{
+        margin-left: 3%;
+        font-size: 17px;
+        line-height: 15px;
+        span{
+            font-weight: bold;
+        }
+    }
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    background: white;
+    border-radius: 7px;
+    margin-top: 5%;
+    .map{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background: white;
+        margin-bottom: 5%;
+    }
+    
+}
+@include responsiveSize(small){
+    .form{
+        width: 90%;
+    }
+
+    .nav1{
+        display: flex;
+        justify-content: center;
+        // background-color: aquamarine;
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 3px;
+            padding: 10px;
+                li{
+                    a{
+                        text-decoration: none;
+                    }
+                    padding: 5px;
+                    background-color:rgb(30, 125, 184);
+                    color: white;
+                    border:  grey 1px solid;
+                    // border-radius: 10px;
+                }
+                li:hover{
+                    background-color: white;
+                    border: 1px black solid;
+                }
+        
+        }
+    }
+}
+.header{
+    background-color:$navcolor;
+    border-radius: 7px 7px 0px 0px;
+    padding: 8px;
+    button{
+        font-size: 20px;
+        margin-left: 2%;
+        border: none;
+        padding: $btnpadding;
+        background-color: rgba(0, 0, 255, 0);
+    }
+}

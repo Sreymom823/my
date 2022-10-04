@@ -1,0 +1,373 @@
+.bt-search {
+  width: 80%;
+  display: flex;
+  padding: 20px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  border: 1px grey solid;
+  background: rgba(167, 166, 166, 0.52);
+}
+
+.bt-search button, .bt-search input {
+  padding: 10px;
+}
+
+.bt-search input[type=text] {
+  width: 90%;
+  border-radius: 10px;
+}
+
+a button {
+  border-radius: 10px;
+  border: 2px grey solid;
+  background-color: rgba(48, 201, 235, 0.833);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav {
+  background-color: rgba(48, 201, 235, 0.833);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.nav .nav-left {
+  padding: 10px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav .nav-left img {
+  border-radius: 50px;
+}
+.nav .nav-left ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.nav .nav-left ul a {
+  text-decoration: none;
+}
+.nav .nav-left ul a li {
+  font-size: 20px;
+  border: 1px white solid;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.nav .nav-left ul a li:hover {
+  background-color: rgba(0, 0, 255, 0.18);
+  cursor: pointer;
+  color: white;
+}
+.nav .nav-right {
+  text-align: center;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .nav-right button {
+  color: white;
+}
+.nav .nav-right button {
+  padding: 8px;
+  width: 80px;
+  background-color: rgba(0, 0, 255, 0.18);
+  border: 1px white solid;
+  font-size: 17px;
+  border-radius: 10px;
+}
+.nav .nav-right button:hover {
+  background-color: white;
+  cursor: pointer;
+  color: black;
+}
+
+.bt-search {
+  width: 80%;
+  display: flex;
+  padding: 20px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  border: 1px grey solid;
+  background: rgba(167, 166, 166, 0.52);
+}
+
+.bt-search button, .bt-search input {
+  padding: 10px;
+}
+
+.bt-search input[type=text] {
+  width: 90%;
+  border-radius: 10px;
+}
+
+a button {
+  border-radius: 10px;
+  border: 2px grey solid;
+  background-color: rgba(48, 201, 235, 0.833);
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  width: 80%;
+  margin-top: 10%;
+}
+.foot .footer {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.foot .footer .f-left, .foot .footer .f-center, .foot .footer .f-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.foot .footer .f-left .title, .foot .footer .f-center .title, .foot .footer .f-right .title {
+  font-size: 20px;
+  margin-left: 9px;
+  font-weight: bold;
+}
+.foot .footer .f-left .left, .foot .footer .f-center .left, .foot .footer .f-right .left {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bt-search {
+  width: 80%;
+  display: flex;
+  padding: 20px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  border: 1px grey solid;
+  background: rgba(167, 166, 166, 0.52);
+}
+
+.bt-search button, .bt-search input {
+  padding: 10px;
+}
+
+.bt-search input[type=text] {
+  width: 90%;
+  border-radius: 10px;
+}
+
+a button {
+  border-radius: 10px;
+  border: 2px grey solid;
+  background-color: rgba(48, 201, 235, 0.833);
+}
+
+.data-form {
+  width: 80%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.data-form .nav1 {
+  display: none;
+}
+.data-form .header {
+  background-color: rgba(48, 201, 235, 0.833);
+  border-radius: 7px 7px 0px 0px;
+  padding: 8px;
+}
+.data-form .header button {
+  font-size: 20px;
+  margin-left: 2%;
+  border: none;
+  padding: 10px;
+  background-color: rgba(0, 0, 255, 0);
+}
+.data-form .group-form {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 5% 0%;
+}
+.data-form .group-form label {
+  font-size: 20px;
+}
+.data-form .group-form .name {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+}
+.data-form .group-form .name .form {
+  display: flex;
+  justify-content: column;
+}
+.data-form .group-form .name .form input {
+  padding: 10px;
+}
+.data-form .group-form .form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.data-form .group-form .form input {
+  padding: 10px;
+}
+.data-form .group-form .uplaodcv {
+  width: 90%;
+  display: flex;
+  border: 1px grey solid;
+}
+.data-form .group-form .uplaodcv .uplaod {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5% 0%;
+}
+.data-form .group-form .apply {
+  display: flex;
+  justify-content: center;
+  flex-direction: center;
+  width: 80%;
+}
+.data-form .group-form .apply button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  width: 15%;
+  background-color: rgba(48, 201, 235, 0.833);
+}
+
+@media (max-width: 884px) {
+  .nav .nav-right {
+    width: 20%;
+  }
+  .nav .nav-right button {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 412px) {
+  .nav .nav-left ul {
+    display: none;
+  }
+  .nav .nav-left img {
+    width: 40px;
+    height: 40px;
+  }
+  .nav .nav-right {
+    width: 40%;
+  }
+  .nav .nav-right button {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 412px) {
+  .data-form {
+    width: 90%;
+  }
+  .data-form .header {
+    margin-top: 5%;
+    margin: 0px 10px;
+  }
+  .data-form .header button {
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+  }
+  .data-form .name {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .data-form .name .form {
+    width: 100%;
+    margin-top: 25px;
+  }
+  .data-form .form {
+    margin-top: -15px;
+  }
+  .data-form .uplaodcv {
+    margin-top: 3%;
+  }
+  .data-form .uplaodcv strong, .data-form .uplaodcv p {
+    font-size: 14px;
+  }
+  .data-form .uplaodcv img {
+    width: 100px;
+    margin-right: -20px;
+  }
+  .data-form .group-form .apply button {
+    width: 30%;
+  }
+  .data-form .nav1 {
+    display: flex;
+    justify-content: center;
+  }
+  .data-form .nav1 ul {
+    display: flex;
+    list-style: none;
+    gap: 3px;
+    padding: 10px;
+  }
+  .data-form .nav1 ul a {
+    display: flex;
+    text-decoration: none;
+  }
+  .data-form .nav1 ul a li {
+    padding: 5px;
+    background-color: rgb(30, 125, 184);
+    color: white;
+    border: grey 1px solid;
+  }
+}
+
+@media (max-width: 412px) {
+  .foot .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .foot .footer i, .foot .footer span {
+    font-size: 15px;
+  }
+  .foot .footer img {
+    width: 15px;
+    height: 15px;
+  }
+  .foot .footer .f-right {
+    margin-left: 20px;
+  }
+  .foot .footer .f-center {
+    margin-left: 15px;
+  }
+  .foot .footer p {
+    font-size: 15px;
+    margin: 1px;
+  }
+}/*# sourceMappingURL=page4.css.map */

@@ -1,0 +1,24 @@
+@import 'variable';
+.bt-search{
+    width: 80%;
+    display: flex;
+    padding: 20px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    border: 1px grey solid;
+    background:rgba(167, 166, 166, 0.52);
+}
+.bt-search button, .bt-search input{
+    padding: 10px;
+}
+.bt-search input[type="text"]{
+    width: 90%;
+    border-radius: 10px;
+}
+a{
+    button{
+        border-radius: 10px;
+        border: 2px grey solid;
+        background-color:  $navcolor;
+    }
+}

@@ -1,0 +1,330 @@
+.bt-search {
+  width: 80%;
+  display: flex;
+  padding: 20px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  border: 1px grey solid;
+  background: rgba(167, 166, 166, 0.52);
+}
+
+.bt-search button, .bt-search input {
+  padding: 10px;
+}
+
+.bt-search input[type=text] {
+  width: 90%;
+  border-radius: 10px;
+}
+
+a button {
+  border-radius: 10px;
+  border: 2px grey solid;
+  background-color: rgba(48, 201, 235, 0.833);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav {
+  background-color: rgba(48, 201, 235, 0.833);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.nav .nav-left {
+  padding: 10px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav .nav-left img {
+  border-radius: 50px;
+}
+.nav .nav-left ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.nav .nav-left ul a {
+  text-decoration: none;
+}
+.nav .nav-left ul a li {
+  font-size: 20px;
+  border: 1px white solid;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.nav .nav-left ul a li:hover {
+  background-color: rgba(0, 0, 255, 0.18);
+  cursor: pointer;
+  color: white;
+}
+.nav .nav-right {
+  text-align: center;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .nav-right button {
+  color: white;
+}
+.nav .nav-right button {
+  padding: 8px;
+  width: 80px;
+  background-color: rgba(0, 0, 255, 0.18);
+  border: 1px white solid;
+  font-size: 17px;
+  border-radius: 10px;
+}
+.nav .nav-right button:hover {
+  background-color: white;
+  cursor: pointer;
+  color: black;
+}
+
+.bt-search {
+  width: 80%;
+  display: flex;
+  padding: 20px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  border: 1px grey solid;
+  background: rgba(167, 166, 166, 0.52);
+}
+
+.bt-search button, .bt-search input {
+  padding: 10px;
+}
+
+.bt-search input[type=text] {
+  width: 90%;
+  border-radius: 10px;
+}
+
+a button {
+  border-radius: 10px;
+  border: 2px grey solid;
+  background-color: rgba(48, 201, 235, 0.833);
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  width: 80%;
+  margin-top: 10%;
+}
+.foot .footer {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.foot .footer .f-left, .foot .footer .f-center, .foot .footer .f-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.foot .footer .f-left .title, .foot .footer .f-center .title, .foot .footer .f-right .title {
+  font-size: 20px;
+  margin-left: 9px;
+  font-weight: bold;
+}
+.foot .footer .f-left .left, .foot .footer .f-center .left, .foot .footer .f-right .left {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bt-search {
+  width: 80%;
+  display: flex;
+  padding: 20px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  border: 1px grey solid;
+  background: rgba(167, 166, 166, 0.52);
+}
+
+.bt-search button, .bt-search input {
+  padding: 10px;
+}
+
+.bt-search input[type=text] {
+  width: 90%;
+  border-radius: 10px;
+}
+
+a button {
+  border-radius: 10px;
+  border: 2px grey solid;
+  background-color: rgba(48, 201, 235, 0.833);
+}
+
+.nav1 {
+  display: none;
+}
+
+.main-content {
+  width: 80%;
+}
+.main-content .content {
+  margin-top: 6%;
+  display: flex;
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  flex-direction: column;
+  width: 100%;
+}
+@media (max-width: 412px) {
+  .main-content .nav1 {
+    display: flex;
+    margin-left: 10%;
+    width: 80%;
+  }
+  .main-content .nav1 ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    gap: 10%;
+    margin-left: -7%;
+  }
+  .main-content .nav1 ul a {
+    text-decoration: none;
+  }
+  .main-content .nav1 ul li:hover {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: gray;
+  }
+}
+.main-content .main-top {
+  display: flex;
+  gap: 5%;
+  margin-left: 3%;
+  margin-top: 3%;
+  border-bottom: 1px solid gray;
+}
+@media (max-width: 412px) {
+  .main-content .main-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -5%;
+    line-height: 20px;
+    margin-left: -3%;
+  }
+  .main-content .main-top .right .name {
+    margin-left: 32%;
+  }
+  .main-content .main-top .right .name i {
+    display: none;
+  }
+  .main-content .main-top .right .button {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-left: 3%;
+  }
+  .main-content .main-top .right .button .share {
+    width: 40%;
+  }
+}
+.main-content .main-top img {
+  border-radius: 80px;
+  margin-top: 25%;
+}
+.main-content .main-top .right {
+  display: flex;
+  flex: 0.8;
+  flex-direction: column;
+}
+.main-content .main-top .right .title span {
+  margin-right: 7%;
+  font-weight: bold;
+}
+.main-content .main-top .right .title h1 {
+  margin-bottom: -5px;
+}
+.main-content .main-top .right .title .name {
+  display: flex;
+  gap: 3%;
+  color: rgb(66, 66, 240);
+}
+.main-content .main-top .right .title .name i {
+  margin-top: 2%;
+  color: black;
+}
+.main-content .button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4%;
+  margin-bottom: 5%;
+}
+.main-content .button button {
+  background: rgb(18, 115, 194);
+  border: none;
+  color: white;
+  padding: 10px;
+}
+.main-content .button button a {
+  text-decoration: none;
+  color: white;
+}
+.main-content .button button[class=share] {
+  justify-content: end;
+}
+.main-content .button button[class=share] i {
+  font-size: 20px;
+}
+.main-content .main-title {
+  line-height: 10px;
+  margin-left: 3%;
+  border-bottom: 1px solid gray;
+  padding-bottom: 2%;
+}
+.main-content .main-title p span {
+  padding: 5%;
+  font-weight: bold;
+}
+.main-content .main-buttom {
+  line-height: 27px;
+  margin-left: 3%;
+  margin-bottom: 3%;
+}
+@media (max-width: 412px) {
+  .main-content .main-buttom {
+    line-height: 20px;
+  }
+  .main-content .main-buttom span {
+    display: none;
+  }
+}
+
+@media (max-width: 412px) {
+  .foot {
+    width: 100%;
+  }
+  .nav1 li {
+    display: none;
+  }
+}/*# sourceMappingURL=page3.css.map */

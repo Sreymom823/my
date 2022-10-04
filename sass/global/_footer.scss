@@ -1,0 +1,37 @@
+@import '../component/btn';
+@import '../component/mixin';
+@import '../component/variable';
+.foot{
+    @include proali(flex,center,center);
+    flex-direction: column;
+    background-color: $fontcolor;
+    width: 80%;
+    margin-top: 10%;
+    .footer{
+        margin-top: 5%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        .f-left ,.f-center ,.f-right{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .title{
+                font-size: 20px;
+                margin-left: 9px;
+                font-weight: bold;
+                
+            }
+            .left{
+                margin: 5px;
+                display: flex;
+                align-items:center;
+                gap: 10px;
+            
+            }
+        }
+    }
+    
+}
+
+

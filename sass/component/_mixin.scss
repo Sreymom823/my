@@ -1,0 +1,12 @@
+@use 'sass:map';
+$breakPoints: (
+    small: 412px,
+    medium: 884px,
+);
+// @media query with difference screen
+@mixin responsiveSize($key) {
+    $size: map.get($breakPoints, $key);
+    @media(max-width:$size) {
+        @content;    
+    }
+}

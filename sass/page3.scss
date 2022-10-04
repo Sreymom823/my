@@ -1,0 +1,159 @@
+@import 'global/nav';
+@import 'global/footer';
+@import 'component/btn';
+@import 'component/variable';
+.nav1{
+    display: none;
+}
+.main-content{
+    width: 80%;
+    .content{
+        margin-top: 6%;
+        display: flex;
+        background: $fontcolor;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        flex-direction: column;
+        width: 100%;
+        }
+        @include responsiveSize(small){
+            .nav1{
+                display: flex;
+                margin-left: 10%;
+                width: 80%;
+                ul{
+                    width: 100%;
+                    display: flex;
+                    list-style: none;
+                    gap: 10%;
+                    margin-left: -7%;
+                    a{
+                        text-decoration: none;
+                    }
+                    li:hover{
+                        padding-top: 10px ;
+                        padding-bottom: 10px;
+                        background: gray;
+                        
+                    }
+                }
+            }
+        }
+        .main-top{
+            @include responsiveSize(small){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin-top: -5%;
+                line-height: 20px;
+                margin-left: -3%;
+                .right{
+                    
+                    .name{
+                        margin-left: 32%;
+                        i{
+                            display: none;
+                        }
+                    }
+                    .button{
+                        display: flex;
+                        justify-content: center;
+                        gap: 2%;
+                        margin-left: 3%;
+                        .share{
+                            width: 40%;
+                        }
+                    }
+                }
+            }
+            display: flex;
+            gap: 5%;
+            margin-left: 3%;
+            margin-top: 3%;
+            border-bottom: 1px solid gray;
+            img{
+            border-radius: 80px;
+            margin-top: 25%;
+            }
+            .right{
+                display: flex;
+                flex: 0.8;
+                flex-direction: column;
+                .title{
+                    span{
+                        margin-right: 7%;
+                        font-weight: bold;
+                    }
+                    h1{
+                        margin-bottom: -5px;
+                    }
+                    .name{
+                        display: flex;
+                        gap: 3%;
+                        color: rgb(66, 66, 240);
+                        i{
+                            margin-top: 2%;
+                            color: black;
+                        }
+                    }  
+                }
+            }
+        }
+        .button{
+            @include flexjc (flex, space-between);
+            margin-top: 4%;
+            margin-bottom: 5%;
+            button{
+                background: rgb(18, 115, 194);
+                border: none;
+                color: white;
+                padding: 10px;
+                a{
+                    text-decoration: none;
+                    color: $fontcolor;
+                }
+            }
+            button[class="share"]{
+                justify-content: end;
+                i{
+                    font-size: 20px;
+                }
+            }
+        }  
+
+        .main-title{
+            line-height: 10px;
+            margin-left: 3%;
+            border-bottom: 1px solid gray;
+            padding-bottom: 2%;
+            p{
+                span{
+                    padding: 5%;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .main-buttom{
+            @include responsiveSize(small){
+                line-height: 20px;
+                span{
+                    display: none;
+                }
+            }
+            line-height: 27px;
+            margin-left: 3%;
+            margin-bottom: 3%;
+        }
+    }
+@include responsiveSize(small){
+        .foot{
+            width: 100%;
+        }
+        .nav1{
+
+            li{
+                display: none;
+            }
+        }
+}

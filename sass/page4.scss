@@ -1,0 +1,213 @@
+@import 'global/nav';
+@import 'global/footer';
+@import 'component/btn';
+@import 'component/variable';
+.data-form{
+    width: $maxwidth;
+    margin-top: 5%;
+    @include proflex (flex, flex-start,column);
+    .nav1{
+        display: none;
+    }
+    .header{
+        background-color:$navcolor;
+        border-radius: 7px 7px 0px 0px;
+        padding: 8px;
+        button{
+            font-size: 20px;
+            margin-left: 2%;
+            border: none;
+            padding: $btnpadding;
+            background-color: rgba(0, 0, 255, 0);
+        }
+    }
+    .group-form{
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border-radius:  0px 0px 10px 10px;
+        background-color: $fontcolor;
+        @include proali(flex,center,center);
+        flex-direction:column ;
+        gap: 30px;
+        padding:5% 0%;
+        label{
+            font-size: 20px;
+        }
+        .name{
+            width: $formwidth;
+            display: flex;
+            justify-content: center;
+            gap: 3%;
+            .form{
+               @include flexjc(flex,column);
+                input{
+                  padding: $btnpadding;
+                }
+            }
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            width: $formwidth;
+            input{
+              padding: $btnpadding;
+            }
+        }
+        .uplaodcv{
+            width: $formwidth;
+            display: flex;
+            border:1px grey solid;
+            .uplaod{
+                @include proflex(flex,center,column); 
+                margin: 5% 0%;
+            }
+        }
+        .apply{ 
+            @include proflex(flex,center,center);   
+            width: $maxwidth;  
+            button{
+                padding: $btnpadding;
+                border: none;
+                border-radius: 10px;
+                color: $fontcolor;
+                width: 15%;
+                background-color: $navcolor;
+            }
+        }
+    }
+}
+.nav{
+    @include responsiveSize (medium){
+        .nav-right{
+            width: 20%;
+            button{
+                padding: 5px;
+                // background-color: rgb(64, 255, 0);
+            }
+        }
+    }
+}
+.nav{
+    @include responsiveSize (small){
+        .nav-left{
+            ul{
+                display: none;
+            }
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .nav-right{
+            width: 40%;
+            button{
+                font-size: 15px;
+            }
+            // background-color: orange;
+        }
+    }
+}
+.data-form{
+    @include responsiveSize(small){
+        width: 90%;
+        // background-color: rgb(68, 15, 15);
+        .header{
+            margin-top: 5%;
+            margin: 0px 10px;
+            button{
+                font-weight: bold;
+                color: white;
+                font-size: 17px;
+            }
+        }
+        .name{
+            width: 100%;
+            // background: #000;
+            display: flex;
+            flex-direction: column;
+            .form{
+                width: 100%;
+                margin-top: 25px;
+            }
+
+        }
+        .form{
+            margin-top: -15px;
+        }
+        .uplaodcv{
+            margin-top: 3%;
+            // background-color: orange;
+            strong ,p{
+                font-size: 14px;
+            }
+            img{
+                width: 100px;
+                margin-right: -20px;
+            }
+        }
+        .group-form{
+            .apply{
+                button{
+                    width: 30%;
+                }
+            }
+        }
+        .nav1{
+            display: flex;
+            justify-content: center;
+            // background-color: aquamarine;
+            ul{
+                display: flex;
+                list-style: none;
+                gap: 3px;
+                padding: 10px;
+                // background:cornflowerblue ;
+            a{     display: flex;
+                    text-decoration: none;
+                    li{
+                        padding: 5px;
+                        background-color:rgb(30, 125, 184);
+                        color: white;
+                        border:  grey 1px solid;
+                        // border-radius: 10px;
+                    }
+                    // li:hover{
+                    //     background-color: #000;
+                    // }
+                }
+            
+            }
+        }
+    }
+}
+
+.foot{
+    .footer{
+        @include responsiveSize(small){
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 15px;
+            i ,span{
+                font-size: 15px; 
+            }
+            img{
+                width:15px;
+                height: 15px;
+            }
+            .f-right{
+                margin-left: 20px;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+            }
+            .f-center{
+              margin-left: 15px;
+            }
+            p{
+                font-size: 15px;
+                margin: 1px;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,76 @@
+@import '../component/btn';
+@import '../component/mixin';
+@import '../component/variable';
+body{
+    margin: 0;
+    padding: 0;
+    background-color: $bodycolor;
+    @include proali (flex,center,center);
+    flex-direction: column;
+
+}
+.nav{
+    background-color: $navcolor;
+    width: 100%;
+    @include flexjc (flex,space-between);
+    position: sticky;
+    top: 0;
+    .nav-left{
+        padding: 10px;
+        margin-left: 20px;
+        // @include projc;
+        display: flex;
+        justify-content: space-between;
+        img{
+            border-radius: 50px;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            a{
+                text-decoration: none;
+                li{
+                    font-size: 20px;
+                    border:  1px white solid;
+                    background-color: white;
+                    padding: 5px;
+                    border-radius: 10px;
+    
+                }
+                li:hover{
+                    background-color: rgb(0, 0, 255, 0.18);
+                    cursor: pointer;
+                    color: white;
+                }
+            }
+          
+            
+        }
+    }
+    .nav-right{   
+        text-align: center;
+        margin-right: 20px;
+        display: flex;justify-content:center;align-items:center;
+        button{
+            color: white;
+        }
+    }
+    .nav-right button{
+        padding: 8px;
+        width: 80px;
+        background-color: rgb(0, 0, 255, 0.18);
+        border: 1px white solid;
+        font-size: 17px;
+        border-radius: 10px;
+    }
+    .nav-right button:hover{
+        background-color: white;
+        cursor: pointer;
+        color: black;
+    }
+}
+
+    

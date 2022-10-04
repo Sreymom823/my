@@ -1,0 +1,147 @@
+@import 'global/nav';
+@import 'global/footer';
+@import 'component/btn';
+@import 'component/variable';
+body{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    background: white;
+    font-family: sans-serif;
+}
+.container-left{
+    @include responsiveSize(small){
+        width: 40%;
+    }
+    background: $bg;
+    width: 40%;
+    text-align: center;
+    border-radius: 8px 0px 0px 8px;
+    .title{
+        h1{
+            @include flexjc (flex, center);
+            margin-top: 75%;
+            color: white;
+            span{
+                color: $color;
+            }
+        }
+    }
+}
+.form{
+    .container-left{
+        @include responsiveSize(small){
+            display: none;
+        }
+    }
+}
+.container-right{
+    @include responsiveSize(small){
+        width: 90%;
+        .input-group{
+            margin-top: -5%;
+        }
+        .signup{
+            margin-bottom: 10%;
+        }
+    }
+    width: 70%;
+    background: rgba(255, 255, 255, 0.678);
+    align-items: center;
+    border-radius: 0px 8px  8px 0px;
+    .title{
+        h3{
+            b{
+                color: $color;
+            }
+        }
+    }
+    .input{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        input[type="text"]{
+            padding: 8px;
+            width: 41.02%;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            border-bottom: solid 1px gray; 
+        }
+        
+    }
+    .input-group{
+        display: flex;
+        margin-top: 30px;
+        gap: 10px;
+        justify-content: center;
+        background: $colorbg;
+        input[type=text], input[type=password], input[type=email]{
+            padding: 8px;
+            box-sizing: border-box;
+            width: 85%;
+            border: none;
+            outline: none;
+            background: $colorbg;
+            border-bottom: solid 1px gray;          
+        }
+    }
+    .signup{
+        margin-top: 10%;
+        margin-left: 20%;
+        margin-bottom: 7%;
+        button{
+            border-radius: 20px;
+            border: 2px solid $color;
+            padding: 10px;
+            width: 80%;
+            color: $color;
+            a{
+                text-decoration: none;
+            }
+        }
+        button:hover{
+            cursor: pointer;
+            background: $bg;
+        }
+    }
+    .checkbox{
+        margin-top: 10%;
+        margin-left: 30px;
+    }
+    h3{
+        text-align: center;
+        font-size: 30px;
+    }
+}
+.input{
+    @include responsiveSize(smallm){
+        margin-left: 1%; 
+    }
+}
+.container-right{
+    @include responsiveSize(medium){
+        width: 90%;
+    }
+}
+.form{
+    width: 50%;
+    margin-top: 46%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 17px;
+    border-radius: 10px 10px 10px 10px;
+    @include responsiveSize(small){
+        width: 80%;
+        margin-top: 40%;
+    }
+}
+.form{
+    @include responsiveSize(medium){
+        margin-top: 120%;
+        width: 80%;
+    }
+}
